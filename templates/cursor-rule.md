@@ -7,7 +7,9 @@ alwaysApply: true
 
 This workspace uses the **daisy** personal productivity system for task management, journaling, and logging.
 
-**Read `daisy/AGENTS.md`** before performing any of these actions:
+When the user addresses **"Daisy"** by name (e.g., "Daisy, start a new day", "Please log that, Daisy"), they are invoking this system. **Read `daisy/AGENTS.md`** to understand and execute the request.
+
+Also read `daisy/AGENTS.md` for any of these actions, even without the "Daisy" address:
 - Starting a new day or week
 - Managing tasks (adding, completing, cancelling, reprioritizing)
 - Logging work or interactions
