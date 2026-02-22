@@ -37,7 +37,7 @@ This creates:
 - `.cursor/rules/daisy.md` so agents automatically discover daisy
 - `.daisy/` and `daisy` entries in `.gitignore`
 
-### 6. Start Using Daisy
+### 4. Start Using Daisy
 
 With the cursor rule installed, just say:
 ```
@@ -81,7 +81,7 @@ daisy install             # Set up ~/bin/daisy and shell environment
 
 ### Optional: API Authentication
 
-For API integrations (Webex, JIRA, GitHub) when MCP servers are unavailable:
+For API integrations (GitHub, etc.) when MCP servers are unavailable:
 
 1. Copy the template to your workspace:
    ```bash
@@ -153,9 +153,7 @@ daisy.000000/                 # Repository root ($DAISY_ROOT)
 └── prompts/
     ├── daisy.md              # Core workflow instructions for AI
     ├── agents-md.md          # Guide for writing AGENTS.md files
-    ├── work.md              # Work-specific augmentations
-    ├──         # Work internal GitHub Enterprise
-    ├── github.md             # Public GitHub
+    ├── github.md             # GitHub integration
     └── retrospective.md      # Reflection guide
 ```
 
@@ -198,7 +196,7 @@ Each workspace independently tracks its own home via `.daisy/home`. No global st
 
 ```
 (A) 2026-01-16 High priority task +Project @context
-(B) 2026-01-16 Medium priority task +PROJ-5678 @jira
+(B) 2026-01-16 Medium priority task +PROJ-5678
 2026-01-16 Inbox task (needs prioritization)
 (C) 2026-01-16 Normal task @github
 (D) 2026-01-16 Someday task +backlog
