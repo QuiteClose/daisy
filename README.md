@@ -7,7 +7,7 @@ A lightweight productivity system combining todo.txt task management with daily 
 ### 1. Clone or Download
 
 ```bash
-git clone <repo-url> daisy
+git clone https://github.com/QuiteClose/daisy.git
 cd daisy
 ```
 
@@ -102,7 +102,7 @@ For API integrations (GitHub, etc.) when MCP servers are unavailable:
 ### Daisy Repo
 
 ```
-daisy.000000/                 # Repository root ($DAISY_ROOT)
+daisy/                        # Repository root ($DAISY_ROOT)
 ├── AGENTS.md                 # System architecture & internal specs (auto-applied by Cursor)
 ├── daisy.sh                  # CLI entry point (symlink to ~/bin/daisy)
 ├── daisy/                    # Distributable system files
@@ -136,15 +136,14 @@ daisy.000000/                 # Repository root ($DAISY_ROOT)
 │       ├── examples.md       # Interaction walkthroughs
 │       ├── todotxt.md        # Todo.txt format specification
 │       └── test-cases.md     # Validation test cases
-├── home/
-│   ├── work/                # Work home
-│   │   ├── AGENTS.md         # Generated prompt (git-ignored)
-│   │   ├── include.txt       # List of prompts to load
+├── home/                        # Your homes (created via `daisy init --new`)
+│   ├── work/                    # Example: work context
+│   │   ├── AGENTS.md            # Generated prompt (git-ignored)
+│   │   ├── include.txt          # List of prompts to load
 │   │   ├── journal/
 │   │   ├── tasks/
-│   │   ├── projects/
-│   │   └── perf/
-│   └── personal/           # Personal home
+│   │   └── projects/
+│   └── personal/                # Example: personal context
 │       ├── AGENTS.md
 │       ├── include.txt
 │       ├── journal/
